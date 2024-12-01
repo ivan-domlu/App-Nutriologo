@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text, FlatList,TouchableOpacity, Image } from 'react-native';
+import { View, Text,TouchableOpacity} from 'react-native';
 import styles from '../css/styles';
+import Logo from './utils/Logo';
 
-const renderPaciente = ({ item }) => (
+const renderPaciente = () => (
     <View style={styles.pacienteContainer}>
       <View style={styles.infoContainer}>
-        <Image source={require('../assets/icon.png')} style={styles.icon} />
-        <Text style={styles.nombre}>{item.nombre}</Text>
+        <Logo/>
+        <Text style={styles.nombre}>Texto default</Text>
       </View>
       <TouchableOpacity style={styles.boton}>
         <Text style={styles.textoBoton}>Modificar dieta</Text>
@@ -18,7 +19,6 @@ const renderPaciente = ({ item }) => (
     <View style={styles.container}>
       <FlatList
         renderItem={renderPaciente}
-        keyExtractor={(item) => item.id}
         contentContainerStyle={styles.lista}
       />
     </View>
