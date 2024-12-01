@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, FlatList,TouchableOpacity, Image } from 'react-native';
 import styles from '../css/styles';
-import Navbar from './utils/NavBar';
 
 const renderPaciente = ({ item }) => (
     <View style={styles.pacienteContainer}>
