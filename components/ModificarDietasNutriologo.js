@@ -22,6 +22,5 @@ const renderPaciente = ({ item }) => (
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.lista}
       />
-      <Navbar isNutriologo={true}/>
     </View>
   );
