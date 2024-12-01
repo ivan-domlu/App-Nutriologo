@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+const verdeOscuro = '#576E40';
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -9,8 +11,14 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#f2f2f2',
+      backgroundColor: '#fff',
     },
+    backButtonContainer: {
+      position: 'absolute', 
+      top: '6%', 
+      left: 8, 
+      zIndex: 10, 
+    },    
     text: {
       fontSize: 20,
       fontWeight: 'bold',
@@ -21,10 +29,6 @@ const styles = StyleSheet.create({
       borderTopColor: '#ddd',
       borderTopWidth: 1,
       height: 60,
-    },
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
     },
     lista: {
       paddingHorizontal: 16,
@@ -70,6 +74,55 @@ const styles = StyleSheet.create({
       color: '#fff',
       fontSize: 14,
       fontWeight: 'bold',
+    },
+    title: {
+      fontSize: 32,
+      fontWeight: '600',
+      color: verdeOscuro, 
+      marginBottom: 30,
+    },
+    logoContainer: {
+      marginBottom: 160      
+    },
+    logoImage: {
+      width: 160,
+      height: 160,            
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    buttonLargePrimary: {
+      backgroundColor: verdeOscuro,
+      width: 280,
+      height: 38,
+      paddingVertical: 8,      
+      borderRadius: 30,      
+    },
+    buttonMediumPrimary: {
+      backgroundColor: verdeOscuro,
+      width: 208,
+      height: 38,
+      paddingVertical: 8,      
+      borderRadius: 30,      
+    },
+    buttonPrimaryText: {
+      color: '#ffffff',
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    buttonLargeSecondary: {
+      width: 280,
+      height: 38,
+      borderWidth: 2,
+      borderColor: verdeOscuro, 
+      paddingVertical: 8,      
+      borderRadius: 30,      
+    },
+    buttonSecondaryText: {
+      color: verdeOscuro, 
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
     }
   });
 
