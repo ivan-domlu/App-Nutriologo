@@ -180,7 +180,42 @@ const styles = StyleSheet.create({
       borderRadius: 8,
       paddingHorizontal: 10,
       marginBottom: 40,
-    }
+    },
+    labelRegister: {
+      width: '90%',
+      fontSize: 16,
+      marginBottom: 8,
+      color: verdeOscuro,
+      fontWeight: 'bold'
+    },
+    inputRegister: {
+      width: '90%',
+      borderBottomWidth: 1,
+      borderBottomColor: verdeOscuro,       
+      padding: 5,
+      marginBottom: 24,
+      fontSize: 16,
+    },
+    checkboxContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 32      
+    },
+    checkbox: {
+      fontSize: 24,
+      marginRight: 10,
+      marginBottom: 16
+    },
+    termsText: {
+      fontSize: 16,
+      color: verdeOscuro,
+      marginBottom: 16
+    },
+    imageComida: {
+      width: 200,
+      height: 200,
+      marginBottom: 16
+    },
   });
 
 export default styles;
