@@ -323,6 +323,27 @@ const styles = StyleSheet.create({
       justifyContent: 'center', 
       alignItems: 'center',
     },
+  
+    profileContainer: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginVertical: 40,
+    },
+    profileImage: {
+      width: 120,
+      height: 120,
+      borderRadius: 60,
+    },
+    button: {
+      marginVertical: 10,
+      alignSelf: 'center',
+    },
+    buttonSecondary: {
+      marginVertical: 10,
+      alignSelf: 'center',
+      borderWidth: 2,
+    }
+
   });
 
 export default styles;
