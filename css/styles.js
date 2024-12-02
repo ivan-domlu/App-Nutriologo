@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const verdeOscuro = '#576E40';
+const verdeClaro = '#BCD09F';
 
 const styles = StyleSheet.create({
     container: {
@@ -117,7 +118,28 @@ const styles = StyleSheet.create({
       fontSize: 16,
       fontWeight: 'bold',
       textAlign: 'center',
-    }
+    },
+    loginContainer: {
+      width: 280,
+      height: 320,
+      backgroundColor: verdeClaro,
+      borderRadius: 8,
+      alignItems: 'center',
+      justifyContent: 'center',      
+    },
+    labelLogin: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginBottom: 8,
+    },
+    inputLogin: {
+      width: 240,
+      height: 24,
+      backgroundColor: 'white',
+      borderRadius: 8,
+      paddingHorizontal: 10,
+      marginBottom: 40,
+    },
   });
 
 export default styles;
