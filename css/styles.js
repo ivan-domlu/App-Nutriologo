@@ -117,6 +117,46 @@ const styles = StyleSheet.create({
       fontSize: 16,
       fontWeight: 'bold',
       textAlign: 'center',
+    },
+    card: {
+      width: '100%',
+      backgroundColor: '#E6E6D9',
+      borderRadius: 10,
+      padding: 15,
+      marginBottom: 20,
+    },
+    cardTitle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: '#576E40',
+      marginBottom: 10,
+    },
+    cardContent: {
+      position: 'relative',
+    },
+    cardSubtitle: {
+      fontSize: 16,
+      fontWeight: '600',
+      color: '#333',
+    },
+    cardDescription: {
+      fontSize: 14,
+      color: '#666',
+      marginTop: 5,
+    },
+    editButton: {
+      position: 'absolute',
+      bottom: 10,
+      right: 10,
+    },
+    contentModificarDieta: {
+      alignItems: 'flex-start',
+      paddingHorizontal: 20,
+      paddingTop: 40,
+    },
+    titleModificarDieta: {
+      fontSize: 24,
+      marginBottom: 20,
     }
   });
 
