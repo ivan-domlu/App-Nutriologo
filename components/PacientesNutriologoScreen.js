@@ -4,16 +4,17 @@ import ButtonShortPrimary from './utils/ButtonShortPrimary';
 import PacienteFoto from './utils/PacienteFoto';
 import styles from '../css/styles';
 
+
 const pacientes = [
   { id: '1', nombre: 'Paciente 1' },
   { id: '2', nombre: 'Paciente 2' },
   { id: '3', nombre: 'Paciente 3' },
-  { id: '4', nombre: 'Paciente 1' },
-  { id: '5', nombre: 'Paciente 2' },
-  { id: '6', nombre: 'Paciente 3' },
-  { id: '7', nombre: 'Paciente 1' },
-  { id: '8', nombre: 'Paciente 2' },
-  { id: '9', nombre: 'Paciente 3' },    
+  { id: '4', nombre: 'Paciente 4' },
+  { id: '5', nombre: 'Paciente 5' },
+  { id: '6', nombre: 'Paciente 6' },
+  { id: '7', nombre: 'Paciente 7' },
+  { id: '8', nombre: 'Paciente 8' },
+  { id: '9', nombre: 'Paciente 9' },    
 ];
 
 const renderPaciente = () => (  
