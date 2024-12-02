@@ -9,7 +9,7 @@ const LaunchScreen = ({ navigation }) => {
     return (                    
         <View style={styles.screen}>
             <Text style={styles.title}>Bienvenido</Text>
-            <Logo />
+            <Logo style={{marginBottom: 160}}/>
             <ButtonLargePrimary 
                 style={{ marginBottom: 16 }} 
                 onPress={() => navigation.navigate('Login')}

@@ -4,10 +4,10 @@ import ComidaPacienteScreen from '../ComidaPacienteScreen'
 import DietaPacienteScreen from '../DietaPacienteScreen';
 import ChatScreen from '../ChatScreen';
 import CuentaScreen from '../CuentaScreen';
-import styles from '../../css/styles';
 import AgendaNutriologoScreen from '../AgendaNutriologoScreen';
 import PacientesNutriologoScreen from '../PacientesNutriologoScreen';
 import MensajeriaNutriologoScreen from '../MensajeriaNutriologoScreen';
+import styles from '../../css/styles';
 
 
 const Tab = createBottomTabNavigator();
@@ -18,7 +18,10 @@ const Navbar = ({ isNutriologo }) => {
         <Tab.Navigator
           screenOptions={{
             headerShown: false, 
-            tabBarStyle: styles.tabBar,
+            tabBarStyle: {
+              ...styles.tabBar,
+              height: '10%'
+            },            
           }}
         >
           {isNutriologo ? (
