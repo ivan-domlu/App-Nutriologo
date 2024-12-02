@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text} from 'react-native';
+import { View, Text, ScrollView} from 'react-native';
 import styles from '../css/styles';
 import Calendar from '../components/utils/Calendar.js';
 
@@ -18,12 +18,10 @@ const AgendaNutriologoScreen = () => {
   };
 
   return (
-    <>
-      <View style={styles.AgendaContainer}>
-        <Text style={styles.AgendaTitle}>Agenda de Pacientes</Text>
-        <Text style={styles.Month}>MES, AÑO</Text>
-      </View>
-
+    <View style={styles.screen}>      
+      <Text style={[styles.title, {marginTop: 50}]}>Agenda de Pacientes</Text>
+      <Text style={styles.Month}>MES, AÑO</Text>      
+      <ScrollView contentContainerStyle={styles.scrollAgenda}>      
       <View style={styles.calendarContainer}>
         <Calendar onDateSelect={setSelectedDate} />
       </View>
@@ -39,7 +37,8 @@ const AgendaNutriologoScreen = () => {
           <Text style={styles.PacienteSecundaria}>Nuevo diagnóstico</Text>
         </View>
       )}
-    </>
+      </ScrollView>
+    </View>
   );
 };
 

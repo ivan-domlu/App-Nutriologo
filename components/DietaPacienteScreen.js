@@ -18,49 +18,48 @@ const DietaPacienteScreen = () => {
   };
 
   return (
-    <>
-    <ScrollView contentContainerStyle={styles.scrollAgenda}>
-      <View style={styles.AgendaContainer}>
-        <Text style={styles.AgendaTitle}>Agenda de Dietas</Text>
-        <Text style={styles.Month}>MES, AÑO</Text>
-      </View>
+    <View style={styles.screen}>
+      <Text style={[styles.title, {marginTop: 50}]}>Agenda de Dietas</Text>
+      <Text style={styles.Month}>MES, AÑO</Text>   
+      <ScrollView contentContainerStyle={styles.scrollAgenda}>      
+           
 
-      <View style={styles.calendarContainer}>
-        <Calendar2 onDateSelect={setSelectedDate} />
-      </View>
-      
-      
-      {selectedDate && (
-        <View style={styles.foodContainer}>
-          <Text style={styles.selectedDateText}>
-            Alimentos para {`${getDayOfWeek(selectedDate)} ${selectedDate} de MES, AÑO`}
-          </Text>
+        <View style={styles.calendarContainer}>
+          <Calendar2 onDateSelect={setSelectedDate} />
+        </View>
+        
+        
+        {selectedDate && (
+          <View style={styles.foodContainer}>
+            <Text style={styles.selectedDateText}>
+              Alimentos para {`${getDayOfWeek(selectedDate)} ${selectedDate} de MES, AÑO`}
+            </Text>
 
-          <View style={styles.mealRow}>
-            <View style={styles.mealCard}>
-              <Text style={styles.mealTitle}>Desayuno</Text>
+            <View style={styles.mealRow}>
+              <View style={styles.mealCard}>
+                <Text style={styles.mealTitle}>Desayuno</Text>
+                  <View style={styles.mealContainer}>
+                  <Text style={styles.mealDescription}>Descripción</Text>
+                  </View>
+              </View>
+              <View style={styles.mealCard}>
+                <Text style={styles.mealTitle}>Comida</Text>
                 <View style={styles.mealContainer}>
-                <Text style={styles.mealDescription}>Descripción</Text>
-                </View>
-            </View>
-            <View style={styles.mealCard}>
-              <Text style={styles.mealTitle}>Comida</Text>
-              <View style={styles.mealContainer}>
-                <Text style={styles.mealDescription}>Descripción</Text>
-                </View>
-            </View>
-            <View style={styles.mealCard}>
-              <Text style={styles.mealTitle}>Cena</Text>
-              <View style={styles.mealContainer}>
-                <Text style={styles.mealDescription}>Descripción</Text>
-                </View>
+                  <Text style={styles.mealDescription}>Descripción</Text>
+                  </View>
+              </View>
+              <View style={styles.mealCard}>
+                <Text style={styles.mealTitle}>Cena</Text>
+                <View style={styles.mealContainer}>
+                  <Text style={styles.mealDescription}>Descripción</Text>
+                  </View>
+              </View>
             </View>
           </View>
-        </View>
-      
-      )}
+        
+        )}
       </ScrollView>
-    </>
+    </View>
   );
 };
 

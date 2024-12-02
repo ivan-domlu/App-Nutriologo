@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { Image } from 'react-native';
 import ComidaPacienteScreen from '../ComidaPacienteScreen';
 import DietaPacienteScreen from '../DietaPacienteScreen';
@@ -9,6 +10,7 @@ import CuentaScreen from '../CuentaScreen';
 import AgendaNutriologoScreen from '../AgendaNutriologoScreen';
 import PacientesNutriologoScreen from '../PacientesNutriologoScreen';
 import MensajeriaNutriologoScreen from '../MensajeriaNutriologoScreen';
+import ModificarDietasScreen from '../ModificarDietasNutriologo';
 import styles from '../../css/styles';
 
 // Importa tus íconos personalizados
@@ -26,6 +28,7 @@ import mensajesIconSelected from '../../assets/icons/MensajesSelected.png';
 import cuentaIconSelected from '../../assets/icons/CuentaSelected.png';
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const Navbar = ({ isNutriologo }) => {
   return (
@@ -138,7 +141,7 @@ const Navbar = ({ isNutriologo }) => {
             ),
           }}
         />
-      </Tab.Navigator>
+      </Tab.Navigator>      
     </NavigationContainer>
   );
 };

@@ -1,20 +1,20 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import styles from '../css/styles';
-import ButtonLargePrimary from './utils/ButtonLargePrimary';
+import { View } from 'react-native';
+import ButtonLargeSecondary from './utils/ButtonLargeSecondary';
 import PacienteFoto from './utils/PacienteFoto';
+import styles from '../css/styles';
 
 const CuentaScreen = () => {
     return (
-      <View style={styles.container}>
-      <View style={profileStyles.profileContainer}>
-        <PacienteFoto/>
+      <View style={styles.screen}>
+        <View style={[styles.profileContainer, {marginBottom: 100}]}>
+          <PacienteFoto style={{width: 120, height:120}}/>
+        </View>
+        <ButtonLargeSecondary style={styles.button}>Cambiar foto de perfil</ButtonLargeSecondary>
+        <ButtonLargeSecondary style={styles.button}>Cambiar contraseña</ButtonLargeSecondary>
+        <ButtonLargeSecondary style={[styles.buttonSecondary, { borderColor: 'red'}]} textColor={'red'}>Salir de la cuenta</ButtonLargeSecondary>
       </View>
-      <ButtonLargePrimary style={profileStyles.button}>Cambiar foto de perfil</ButtonLargePrimary>
-      <ButtonLargePrimary style={profileStyles.button}>Cambiar contraseña</ButtonLargePrimary>
-      <ButtonLargePrimary style={[profileStyles.buttonSecondary, { borderColor: 'red' }]}>Salir de la cuenta</ButtonLargePrimary>
-    </View>
-  );
+    );
 };
 
 export default CuentaScreen;

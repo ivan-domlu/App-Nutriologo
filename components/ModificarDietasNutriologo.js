@@ -2,19 +2,19 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import styles from '../css/styles';
 import Card from './utils/Card'
+import ButtonBack from './utils/ButtonBack';
 
-const ModificarDietaScreen = () => {
-  return (
-    <View style={styles.container}>
-      <View style={[styles.screen, customStyles.contentModificarDieta]}>
-        <Text style={[styles.titleModificarDieta, customStyles.titleModificarDieta]}>Modificar dieta</Text>
+const ModificarDietasScreen = ({navigation}) => {
+  return (    
+    <View style={[styles.screen]}>
+      <ButtonBack navigation={navigation}/>
+      <Text style={[styles.title, {marginBottom: 60}]}>Modificar dieta</Text>
 
-        <Card title="Día Desayuno" subtitle="Comida" description="Descripción" />
-        <Card title="Día Comida" subtitle="Comida" description="Descripción" />
-        <Card title="Día Cena" subtitle="Comida" description="Descripción" />
-      </View>
-    </View>
+      <Card title="Día Desayuno" subtitle="Comida" description="Descripción" />
+      <Card title="Día Comida" subtitle="Comida" description="Descripción" />
+      <Card title="Día Cena" subtitle="Comida" description="Descripción" />
+    </View>    
   );
 };
 
-export default ModificarDietaScreen;
+export default ModificarDietasScreen;

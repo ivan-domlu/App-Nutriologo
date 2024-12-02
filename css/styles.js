@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     fotoPaciente: {
       width: 50,
       height: 50,
-      borderRadius: 50,                        
+      borderRadius: '100%',                        
     },
     infoContainer: {
       flexDirection: 'row',
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
       textAlign: 'center',
     },
     card: {
-      width: '100%',
+      width: '90%',
       backgroundColor: '#E6E6D9',
       borderRadius: 10,
       padding: 15,
@@ -252,8 +252,7 @@ const styles = StyleSheet.create({
     },
 
     //Dia seleccionado NUTRIOLOGO
-    scrollAgenda: {
-      flexGrow: 1,
+    scrollAgenda: {      
       backgroundColor: '#fff',
     },
     dateInfo: {
@@ -339,7 +338,7 @@ const styles = StyleSheet.create({
       alignSelf: 'center',
     },
     buttonSecondary: {
-      marginVertical: 10,
+      marginVertical: 50,
       alignSelf: 'center',
       borderWidth: 2,
     }
