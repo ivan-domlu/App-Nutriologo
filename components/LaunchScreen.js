@@ -8,7 +8,7 @@ import Logo from './utils/Logo';
 const LaunchScreen = ({ navigation }) => {
     return (                    
         <View style={styles.screen}>
-            <Text style={styles.title}>Bienvenido</Text>
+            <Text style={[styles.title, {marginBottom:32}]}>Bienvenido</Text>
             <Logo style={{marginBottom: 160}}/>
             <ButtonLargePrimary 
                 style={{ marginBottom: 16 }} 

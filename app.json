@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Parcial2",
-    "slug": "Parcial2",
+    "name": "ProyectoFinal",
+    "slug": "ProyectoFinal",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Icon.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
