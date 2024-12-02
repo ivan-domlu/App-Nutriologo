@@ -216,8 +216,6 @@ const styles = StyleSheet.create({
       height: 200,
       marginBottom: 16
     },
-
-
     //AgendaNutriologo
     AgendaContainer: {
       flex: 0,
@@ -345,7 +343,6 @@ const styles = StyleSheet.create({
       alignSelf: 'center',
       borderWidth: 2,
     }
-
   });
 
 export default styles;
