@@ -7,7 +7,7 @@ import LoginScreen from './components/LoginScreen';
 import RegistroPacienteScreen from './components/RegistroPacienteScreen';
 import RegistroNutriologoScreen from './components/RegistroNutriologoScreen';
 
-const isNutriologo = true;
+const isNutriologo = false;
 const userLogedIn = true;
 const Stack = createStackNavigator();
 
