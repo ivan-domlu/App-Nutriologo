@@ -119,7 +119,6 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       textAlign: 'center',
     },
-
     card: {
       width: '100%',
       backgroundColor: '#E6E6D9',
@@ -324,6 +323,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center', 
       alignItems: 'center',
     },
+  
     profileContainer: {
       justifyContent: 'center',
       alignItems: 'center',
@@ -343,6 +343,7 @@ const styles = StyleSheet.create({
       alignSelf: 'center',
       borderWidth: 2,
     }
+
   });
 
 export default styles;
